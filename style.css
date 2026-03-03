@@ -37,7 +37,7 @@ ul { list-style: none; }
 img, svg { display: block; }
 
 /* ============================================================
-   CUSTOM CURSOR
+   CUSTOM CURSOR  (hidden on touch devices)
    ============================================================ */
 .cursor {
   position: fixed;
@@ -73,6 +73,13 @@ img, svg { display: block; }
 }
 
 .cursor-ring.hover { opacity: 0; }
+
+/* На touch-устройствах курсор и кольцо скрываем полностью */
+@media (hover: none), (pointer: coarse) {
+  .cursor,
+  .cursor-ring { display: none !important; }
+  body { cursor: auto; }
+}
 
 /* ============================================================
    NAVIGATION

@@ -8,6 +8,9 @@
   const ring = document.getElementById('cursor-ring');
   if (!dot || !ring) return;
 
+  /* Skip entirely on touch/stylus devices */
+  if (window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
+
   let mx = -100, my = -100;
   let rx = -100, ry = -100;
 
