@@ -29,8 +29,12 @@ body {
   color: var(--dark);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  cursor: none;
 }
+
+/* cursor: none применяется только когда JS подтвердил наличие мыши */
+body.has-mouse-cursor { cursor: none; }
+body.has-mouse-cursor a,
+body.has-mouse-cursor button { cursor: none; }
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -74,12 +78,6 @@ img, svg { display: block; }
 
 .cursor-ring.hover { opacity: 0; }
 
-/* На touch-устройствах курсор и кольцо скрываем полностью */
-@media (hover: none), (pointer: coarse) {
-  .cursor,
-  .cursor-ring { display: none !important; }
-  body { cursor: auto; }
-}
 
 /* ============================================================
    NAVIGATION

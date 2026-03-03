@@ -8,18 +8,32 @@
   const ring = document.getElementById('cursor-ring');
   if (!dot || !ring) return;
 
-  /* Skip entirely on touch/stylus devices */
-  if (window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
-
+  let activated = false;
   let mx = -100, my = -100;
   let rx = -100, ry = -100;
 
-  document.addEventListener('mousemove', e => {
+  /* Wait for a real mouse move (not a synthetic touch event).
+     Synthetic touch→mouse events fire at the tap point but have movementX/Y === 0
+     and no buttons, so we filter them out. */
+  function onFirstMouseMove(e) {
+    if (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents) return;
+    if (!activated) {
+      activated = true;
+      document.body.classList.add('has-mouse-cursor');
+      dot.style.opacity  = '1';
+      ring.style.opacity = '1';
+    }
     mx = e.clientX;
     my = e.clientY;
     dot.style.left = mx + 'px';
     dot.style.top  = my + 'px';
-  });
+  }
+
+  /* Hide elements initially; they become visible only after mouse confirmed */
+  dot.style.opacity  = '0';
+  ring.style.opacity = '0';
+
+  document.addEventListener('mousemove', onFirstMouseMove);
 
   (function animateRing() {
     rx += (mx - rx) * 0.11;
