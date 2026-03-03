@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liza — Полиграфия & Дизайн</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav__logo">liza<span class="nav__dot">.</span>print</a>
+  <ul class="nav__links">
+    <li><a href="#works">работы</a></li>
+    <li><a href="#about">обо мне</a></li>
+    <li><a href="#services">услуги</a></li>
+    <li><a href="#contact">контакт</a></li>
+  </ul>
+  <button class="nav__burger" id="burger" aria-label="Меню">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="#works" class="mm-link">работы</a></li>
+    <li><a href="#about" class="mm-link">обо мне</a></li>
+    <li><a href="#services" class="mm-link">услуги</a></li>
+    <li><a href="#contact" class="mm-link">контакт</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <div class="hero__badge reveal">полиграфия · дизайн · печать</div>
+      <h1 class="hero__title reveal">
+        Полиграфия<br>
+        <em class="hero__em">&amp; дизайн</em>
+      </h1>
+      <p class="hero__sub reveal">
+        Создаю печатные изделия, которые хочется держать в руках — от открыток до игральных карт
+      </p>
+      <a href="#works" class="btn-cta reveal">
+        смотреть работы
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 15L15 3M15 3H6M15 3V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="hero__fan-wrap">
+      <div class="fan" id="fan"></div>
+      <p class="fan__caption">PANTONE®</p>
+    </div>
+  </div>
+
+  <div class="hero__ticker" aria-hidden="true">
+    <div class="ticker__track" id="ticker-track"></div>
+  </div>
+</section>
+
+<!-- WORKS / PRODUCTS -->
+<section class="works" id="works">
+  <div class="works__head reveal">
+    <div class="works__head-left">
+      <h2 class="section-title">готовые изделия</h2>
+      <a href="#" class="section-all">(смотреть все)</a>
+    </div>
+    <span class="section-corner">↙</span>
+  </div>
+
+  <div class="works__grid">
+
+    <!-- Mug -->
+    <div class="pcard reveal" style="--cb:#FFF0EE;--ct:#D4441C">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="90" cy="55" rx="56" ry="14" fill="#F06848"/>
+          <rect x="34" y="55" width="112" height="100" rx="10" fill="#D4441C"/>
+          <ellipse cx="90" cy="155" rx="56" ry="13" fill="#B03210"/>
+          <path d="M146 78 C182 78 182 132 146 132" stroke="#B03210" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <circle cx="80" cy="104" r="20" fill="white" fill-opacity="0.15"/>
+          <polygon points="90,72 97,94 121,97 104,113 110,137 90,125 70,137 76,113 59,97 83,94" fill="white" fill-opacity="0.12"/>
+          <circle cx="57" cy="87" r="5" fill="white" fill-opacity="0.28"/>
+          <circle cx="120" cy="82" r="4" fill="white" fill-opacity="0.22"/>
+          <circle cx="108" cy="135" r="3.5" fill="white" fill-opacity="0.25"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">кружка с принтом</p>
+        <p class="pcard__price">от 850 р</p>
+      </div>
+    </div>
+
+    <!-- Postcard -->
+    <div class="pcard reveal" style="--cb:#EEFBF4;--ct:#1D8A4A">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18" y="58" width="164" height="104" rx="7" fill="#1D8A4A"/>
+          <rect x="26" y="65" width="68" height="90" rx="5" fill="#28A85A"/>
+          <circle cx="60" cy="110" r="24" fill="#157A3C"/>
+          <circle cx="60" cy="86" r="9" fill="#FFD166"/>
+          <circle cx="76" cy="97" r="8" fill="#FF7CA3"/>
+          <circle cx="44" cy="97" r="8" fill="#FF7CA3"/>
+          <circle cx="80" cy="116" r="7" fill="#FFD166"/>
+          <circle cx="40" cy="116" r="7" fill="#FFD166"/>
+          <circle cx="60" cy="130" r="8" fill="#FF7CA3"/>
+          <rect x="102" y="65" width="72" height="90" rx="5" fill="white" fill-opacity="0.92"/>
+          <line x1="112" y1="88" x2="166" y2="88" stroke="#D8D4CC" stroke-width="1.5"/>
+          <line x1="112" y1="100" x2="166" y2="100" stroke="#D8D4CC" stroke-width="1.5"/>
+          <line x1="112" y1="112" x2="166" y2="112" stroke="#D8D4CC" stroke-width="1.5"/>
+          <line x1="112" y1="124" x2="166" y2="124" stroke="#D8D4CC" stroke-width="1.5"/>
+          <rect x="136" y="69" width="30" height="22" rx="3" fill="#1D8A4A" fill-opacity="0.18" stroke="#1D8A4A" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <line x1="102" y1="65" x2="102" y2="155" stroke="#C0BCBA" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">открытка</p>
+        <p class="pcard__price">от 120 р</p>
+      </div>
+    </div>
+
+    <!-- Playing Cards -->
+    <div class="pcard reveal" style="--cb:#FFFBEE;--ct:#B8860A">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Back card -->
+          <g transform="rotate(-16 100 130)">
+            <rect x="44" y="52" width="72" height="100" rx="8" fill="#1C1B38"/>
+            <rect x="50" y="58" width="60" height="88" rx="5" fill="#252350"/>
+            <line x1="50" y1="58" x2="110" y2="146" stroke="#3D3A72" stroke-width="1.2"/>
+            <line x1="110" y1="58" x2="50" y2="146" stroke="#3D3A72" stroke-width="1.2"/>
+            <line x1="50" y1="102" x2="110" y2="102" stroke="#3D3A72" stroke-width="0.7"/>
+            <line x1="80" y1="58" x2="80" y2="146" stroke="#3D3A72" stroke-width="0.7"/>
+          </g>
+          <!-- Middle card — Ace of Hearts -->
+          <g transform="rotate(-5 100 130)">
+            <rect x="56" y="45" width="74" height="102" rx="8" fill="white" stroke="#E8E4E0" stroke-width="1.5"/>
+            <text x="66" y="71" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#C8351A">A</text>
+            <text x="64" y="84" font-family="Georgia, serif" font-size="13" fill="#C8351A">♥</text>
+            <text x="93" y="110" font-family="Georgia, serif" font-size="38" text-anchor="middle" fill="#C8351A">♥</text>
+            <text x="120" y="137" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#C8351A" transform="rotate(180 120 130)">A</text>
+          </g>
+          <!-- Front card — King of Spades -->
+          <g transform="rotate(12 100 130)">
+            <rect x="72" y="50" width="74" height="102" rx="8" fill="white" stroke="#E8E4E0" stroke-width="1.5"/>
+            <text x="81" y="74" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#1A1A2E">K</text>
+            <text x="80" y="86" font-family="Georgia, serif" font-size="12" fill="#1A1A2E">♠</text>
+            <text x="109" y="112" font-family="Georgia, serif" font-size="36" text-anchor="middle" fill="#1A1A2E">♠</text>
+            <text x="137" y="138" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#1A1A2E" transform="rotate(180 137 131)">K</text>
+          </g>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">игральные карты</p>
+        <p class="pcard__price">от 2 400 р</p>
+      </div>
+    </div>
+
+    <!-- Business Cards -->
+    <div class="pcard reveal" style="--cb:#F2EEFF;--ct:#6C4FBF">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="28" y="88" width="144" height="82" rx="9" fill="#4A35A0" transform="rotate(-3.5 100 129)"/>
+          <rect x="28" y="86" width="144" height="82" rx="9" fill="#5B44B4" transform="rotate(-1.5 100 127)"/>
+          <rect x="28" y="84" width="144" height="82" rx="9" fill="#7A5FD5"/>
+          <circle cx="56" cy="116" r="16" fill="white" fill-opacity="0.18"/>
+          <circle cx="56" cy="116" r="8" fill="white" fill-opacity="0.15"/>
+          <rect x="80" y="109" width="66" height="6" rx="3" fill="white" fill-opacity="0.92"/>
+          <rect x="80" y="121" width="46" height="4" rx="2" fill="white" fill-opacity="0.5"/>
+          <rect x="80" y="131" width="56" height="4" rx="2" fill="white" fill-opacity="0.45"/>
+          <line x1="28" y1="156" x2="64" y2="156" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+          <line x1="28" y1="156" x2="28" y2="120" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+          <line x1="172" y1="84" x2="136" y2="84" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+          <line x1="172" y1="84" x2="172" y2="120" stroke="white" stroke-opacity="0.25" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">визитки</p>
+        <p class="pcard__price">от 500 р</p>
+      </div>
+    </div>
+
+    <!-- Poster -->
+    <div class="pcard reveal" style="--cb:#EEF3FF;--ct:#2456C8">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="48" y="172" width="104" height="13" rx="6.5" fill="#C0BAB2"/>
+          <rect x="50" y="174" width="100" height="9" rx="4.5" fill="#E0DAD2"/>
+          <rect x="52" y="28" width="96" height="144" rx="7" fill="#2456C8"/>
+          <rect x="58" y="34" width="84" height="58" rx="4" fill="#3A6EE8"/>
+          <circle cx="100" cy="63" r="24" fill="#1A46B8" fill-opacity="0.6"/>
+          <circle cx="87" cy="50" r="15" fill="#FFD166" fill-opacity="0.72"/>
+          <rect x="58" y="96" width="38" height="22" rx="4" fill="#FFD166"/>
+          <rect x="100" y="96" width="42" height="22" rx="4" fill="#FF6B6B"/>
+          <rect x="58" y="122" width="84" height="7" rx="3.5" fill="white" fill-opacity="0.32"/>
+          <rect x="58" y="133" width="58" height="5" rx="2.5" fill="white" fill-opacity="0.22"/>
+          <rect x="58" y="142" width="38" height="4" rx="2" fill="white" fill-opacity="0.16"/>
+          <rect x="48" y="16" width="104" height="14" rx="7" fill="#C0BAB2"/>
+          <rect x="50" y="18" width="100" height="10" rx="5" fill="#E0DAD2"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">постер / плакат</p>
+        <p class="pcard__price">от 350 р</p>
+      </div>
+    </div>
+
+    <!-- Stickers -->
+    <div class="pcard reveal" style="--cb:#FFF0F8;--ct:#C4359A">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="32" width="156" height="136" rx="9" fill="white" stroke="#ECD8E8" stroke-width="2"/>
+          <!-- Sticker 1: Heart -->
+          <circle cx="64" cy="72" r="23" fill="#FF6B9D" stroke="white" stroke-width="3"/>
+          <path d="M64 81 C64 81 51 72 51 65 C51 60 55 57 58.5 57 C61.5 57 64 60 64 60 C64 60 66.5 57 69.5 57 C73 57 77 60 77 65 C77 72 64 81 64 81Z" fill="white"/>
+          <!-- Sticker 2: Star -->
+          <circle cx="136" cy="68" r="23" fill="#FFD166" stroke="white" stroke-width="3"/>
+          <polygon points="136,52 140,63 152,64 143,73 146,85 136,79 126,85 129,73 120,64 132,63" fill="white"/>
+          <!-- Sticker 3: Flower -->
+          <circle cx="64" cy="130" r="23" fill="#A78BFA" stroke="white" stroke-width="3"/>
+          <circle cx="64" cy="118" r="8" fill="white" fill-opacity="0.72"/>
+          <circle cx="64" cy="142" r="8" fill="white" fill-opacity="0.72"/>
+          <circle cx="52" cy="130" r="8" fill="white" fill-opacity="0.72"/>
+          <circle cx="76" cy="130" r="8" fill="white" fill-opacity="0.72"/>
+          <circle cx="64" cy="130" r="8" fill="#FFD166"/>
+          <!-- Sticker 4: Lightning -->
+          <circle cx="136" cy="132" r="23" fill="#06D6A0" stroke="white" stroke-width="3"/>
+          <polygon points="138,117 127,133 135,133 132,147 145,130 137,130" fill="white"/>
+          <!-- Cut lines -->
+          <line x1="100" y1="32" x2="100" y2="168" stroke="#DDD0D8" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="22" y1="100" x2="178" y2="100" stroke="#DDD0D8" stroke-width="1" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">стикерпак</p>
+        <p class="pcard__price">от 300 р</p>
+      </div>
+    </div>
+
+    <!-- Notebook -->
+    <div class="pcard reveal" style="--cb:#FFF6EE;--ct:#C46A20">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="68" y="28" width="22" height="144" rx="4" fill="#7A3210"/>
+          <rect x="84" y="28" width="96" height="144" rx="7" fill="#C46A20"/>
+          <rect x="74" y="33" width="12" height="132" rx="2" fill="#F0E8E0"/>
+          <line x1="77" y1="33" x2="77" y2="165" stroke="#E0D8D0" stroke-width="1"/>
+          <line x1="81" y1="33" x2="81" y2="165" stroke="#E0D8D0" stroke-width="1"/>
+          <circle cx="78" cy="50" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="66" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="82" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="98" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="114" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="130" r="4" fill="#5C2808"/>
+          <circle cx="78" cy="146" r="4" fill="#5C2808"/>
+          <rect x="94" y="52" width="74" height="5" rx="2.5" fill="white" fill-opacity="0.5"/>
+          <rect x="94" y="62" width="52" height="5" rx="2.5" fill="white" fill-opacity="0.38"/>
+          <circle cx="136" cy="118" r="30" fill="#A85420" fill-opacity="0.5"/>
+          <circle cx="136" cy="118" r="18" fill="#E8782A" fill-opacity="0.55"/>
+          <rect x="94" y="80" width="74" height="42" rx="5" fill="white" fill-opacity="0.14"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">блокнот с принтом</p>
+        <p class="pcard__price">от 650 р</p>
+      </div>
+    </div>
+
+    <!-- Tote Bag -->
+    <div class="pcard reveal" style="--cb:#EEFAF8;--ct:#1A9080">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M68 72 C68 46 87 34 100 34 C113 34 132 46 132 72" stroke="#1A9080" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M43 72 L54 178 Q100 190 146 178 L157 72 Z" fill="#1A9080"/>
+          <path d="M54 82 L63 170 Q100 180 137 170 L146 82 Z" fill="#28ACA0"/>
+          <circle cx="100" cy="132" r="30" fill="#0E7068" fill-opacity="0.45"/>
+          <polygon points="100,103 116,127 132,152 100,157 68,152 84,127" fill="#3ECAB8" fill-opacity="0.38"/>
+          <circle cx="100" cy="132" r="15" fill="#FFD166" fill-opacity="0.6"/>
+          <ellipse cx="78" cy="73" rx="9" ry="4.5" fill="#0E6050"/>
+          <ellipse cx="122" cy="73" rx="9" ry="4.5" fill="#0E6050"/>
+          <line x1="58" y1="172" x2="142" y2="172" stroke="#0E6050" stroke-width="2" stroke-dasharray="6 3"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">шопер с принтом</p>
+        <p class="pcard__price">от 950 р</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about__inner">
+
+    <div class="about__photo reveal">
+      <img src="photo.png" alt="Лиза" loading="lazy">
+    </div>
+
+    <div class="about__content">
+      <div class="about__text">
+        <h2 class="section-title reveal">привет,<br>я — лиза</h2>
+        <p class="reveal">Работаю печатником и дизайнером. Люблю, когда идея превращается в реальный объект — который можно потрогать, подарить, запомнить.</p>
+        <p class="reveal">Занимаюсь полиграфией от разработки концепции до финального изделия: подбираю цвета по Pantone, материалы и отделку под каждый проект.</p>
+      </div>
+      <div class="about__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-target="3">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">года в полиграфии</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="200">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">выполненных заказов</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="8">0</span>
+          <span class="stat__label">видов изделий</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">∞</span>
+          <span class="stat__label">цветовых решений</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services__head reveal">
+    <h2 class="section-title">что я делаю</h2>
+  </div>
+  <div class="services__grid">
+
+    <div class="scard reveal">
+      <div class="scard__icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/>
+          <rect x="15" y="3" width="10" height="10" rx="2" fill="currentColor" fill-opacity="0.5"/>
+          <rect x="3" y="15" width="10" height="10" rx="2" fill="currentColor" fill-opacity="0.5"/>
+          <rect x="15" y="15" width="10" height="10" rx="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3>Дизайн с нуля</h3>
+      <p>Разрабатываю дизайн под ваш бриф — логотип, паттерн, иллюстрацию или полноценный продукт от идеи до макета</p>
+    </div>
+
+    <div class="scard reveal">
+      <div class="scard__icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="14" cy="14" r="4.5" fill="currentColor"/>
+          <line x1="14" y1="1" x2="14" y2="6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="14" y1="22" x2="14" y2="27" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="1" y1="14" x2="6" y2="14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="22" y1="14" x2="27" y2="14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Подбор Pantone</h3>
+      <p>Помогаю выбрать точные цвета для бренда с учётом особенностей печати на разных материалах и подложках</p>
+    </div>
+
+    <div class="scard reveal">
+      <div class="scard__icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="4" y="6" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2.2"/>
+          <line x1="4" y1="12" x2="24" y2="12" stroke="currentColor" stroke-width="1.8"/>
+          <rect x="8" y="15" width="5" height="4" rx="1" fill="currentColor"/>
+          <line x1="8" y1="24" x2="20" y2="24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Предпечатная подготовка</h3>
+      <p>Привожу файлы в нужный формат, разрешение и цветовое пространство — всё готово к отправке в типографию</p>
+    </div>
+
+    <div class="scard reveal">
+      <div class="scard__icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M5 24 L5 10 L14 4 L23 10 L23 24 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <rect x="10" y="16" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+          <path d="M10 13 L14 9 L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Производство</h3>
+      <p>Организую печать на проверенных типографиях и контролирую качество — вы получаете готовое изделие</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__left reveal">
+      <h2 class="section-title">давайте<br>сделаем<br>что-то<br>красивое</h2>
+      <p>Расскажите про ваш проект — обсудим идею, материалы и сроки</p>
+    </div>
+    <div class="contact__right reveal">
+      <a href="mailto:svekolte@gmail.com" class="contact__link">
+        <span class="contact__link-label">почта</span>
+        <span class="contact__link-val">svekolte@gmail.com <span class="contact__arr">↗</span></span>
+      </a>
+      <a href="https://t.me/whhyeliz" class="contact__link" target="_blank" rel="noopener">
+        <span class="contact__link-label">telegram</span>
+        <span class="contact__link-val">@whhyeliz <span class="contact__arr">↗</span></span>
+      </a>
+    </div>
+  </div>
+  <div class="contact__bg-text" aria-hidden="true">PRINT</div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__logo">liza<span class="footer__dot">.</span>print</span>
+    <span class="footer__copy">© 2026 — Полиграфия & Дизайн</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
