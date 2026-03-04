@@ -81,7 +81,7 @@
   <div class="works__grid">
 
     <!-- Mug -->
-    <div class="pcard reveal" style="--cb:#FFF0EE;--ct:#D4441C">
+    <div class="pcard pcard--has-gallery reveal" data-gallery="mugs" style="--cb:#FFF0EE;--ct:#D4441C">
       <div class="pcard__img">
         <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="90" cy="55" rx="56" ry="14" fill="#F06848"/>
@@ -97,11 +97,55 @@
       </div>
       <div class="pcard__info">
         <p class="pcard__name">кружка с принтом</p>
+        <span class="pcard__gallery-tag">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><rect x="0.8" y="2.5" width="9.4" height="6.5" rx="1.4" stroke="currentColor" stroke-width="1.1"/><circle cx="5.5" cy="5.75" r="1.7" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 2.5V2C3.6 1.6 4 1.2 5.5 1.2S7.4 1.6 7.4 2V2.5" stroke="currentColor" stroke-width="1.1"/></svg>
+          смотреть фото
+        </span>
+      </div>
+    </div>
+
+    <!-- Foiling -->
+    <div class="pcard pcard--has-gallery reveal" data-gallery="foiling" style="--cb:#F7EEFF;--ct:#8B2FC8">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="58" width="140" height="96" rx="8" fill="#C8A0E8" fill-opacity="0.2" transform="translate(3 3)"/>
+          <rect x="30" y="54" width="140" height="96" rx="8" fill="#F0E8FA"/>
+          <rect x="44" y="68" width="112" height="68" rx="5" fill="url(#foilGrad)"/>
+          <path d="M100 122 C100 122 72 106 72 90 C72 81 79 75 87 75 C93 75 100 83 100 83 C100 83 107 75 113 75 C121 75 128 81 128 90 C128 106 100 122 100 122Z" fill="url(#heartGrad)"/>
+          <path d="M82 81 C85 78 90 77 95 79" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.8"/>
+          <path d="M48 66 L49.5 61 L51 66 L56 67.5 L51 69 L49.5 74 L48 69 L43 67.5 Z" fill="#9B2FC8"/>
+          <path d="M150 62 L151.5 57 L153 62 L158 63.5 L153 65 L151.5 70 L150 65 L145 63.5 Z" fill="#9B2FC8"/>
+          <path d="M36 108 L37 104.5 L38 108 L41.5 109 L38 110 L37 113.5 L36 110 L32.5 109 Z" fill="#B060DC" fill-opacity="0.6"/>
+          <path d="M163 96 L164 92.5 L165 96 L168.5 97 L165 98 L164 101.5 L163 98 L159.5 97 Z" fill="#B060DC" fill-opacity="0.6"/>
+          <circle cx="44" cy="96" r="2.2" fill="#D4A8F0"/>
+          <circle cx="156" cy="88" r="2.2" fill="#D4A8F0"/>
+          <circle cx="157" cy="108" r="1.6" fill="#D4A8F0"/>
+          <defs>
+            <linearGradient id="foilGrad" x1="44" y1="68" x2="156" y2="136" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F0E0FF" stop-opacity="0.5"/>
+              <stop offset="45%" stop-color="#F8F0FF" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#D8B0F0" stop-opacity="0.3"/>
+            </linearGradient>
+            <linearGradient id="heartGrad" x1="72" y1="75" x2="128" y2="122" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#DDA0FF"/>
+              <stop offset="40%" stop-color="#F0D0FF"/>
+              <stop offset="65%" stop-color="#C870F8"/>
+              <stop offset="100%" stop-color="#A840D0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">фольгирование</p>
+        <span class="pcard__gallery-tag">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><rect x="0.8" y="2.5" width="9.4" height="6.5" rx="1.4" stroke="currentColor" stroke-width="1.1"/><circle cx="5.5" cy="5.75" r="1.7" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 2.5V2C3.6 1.6 4 1.2 5.5 1.2S7.4 1.6 7.4 2V2.5" stroke="currentColor" stroke-width="1.1"/></svg>
+          смотреть фото
+        </span>
       </div>
     </div>
 
     <!-- Postcard -->
-    <div class="pcard reveal" style="--cb:#EEFBF4;--ct:#1D8A4A">
+    <div class="pcard pcard--has-gallery reveal" data-gallery="postcard" style="--cb:#EEFBF4;--ct:#1D8A4A">
       <div class="pcard__img">
         <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="18" y="58" width="164" height="104" rx="7" fill="#1D8A4A"/>
@@ -124,6 +168,10 @@
       </div>
       <div class="pcard__info">
         <p class="pcard__name">открытка</p>
+        <span class="pcard__gallery-tag">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><rect x="0.8" y="2.5" width="9.4" height="6.5" rx="1.4" stroke="currentColor" stroke-width="1.1"/><circle cx="5.5" cy="5.75" r="1.7" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 2.5V2C3.6 1.6 4 1.2 5.5 1.2S7.4 1.6 7.4 2V2.5" stroke="currentColor" stroke-width="1.1"/></svg>
+          смотреть фото
+        </span>
       </div>
     </div>
 
@@ -289,6 +337,37 @@
       </div>
     </div>
 
+    <!-- Badges -->
+    <div class="pcard reveal" style="--cb:#EFF3FF;--ct:#3D52C8">
+      <div class="pcard__img">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="82" r="36" fill="#3D52C8" fill-opacity="0.1"/>
+          <circle cx="100" cy="82" r="32" fill="#3D52C8"/>
+          <circle cx="100" cy="82" r="25" fill="#5068DC"/>
+          <polygon points="100,65 104.5,77 117,79 108,88 110.5,101 100,94.5 89.5,101 92,88 83,79 95.5,77" fill="white" fill-opacity="0.88"/>
+          <rect x="96.5" y="112" width="7" height="16" rx="3.5" fill="#2438A8"/>
+          <circle cx="57" cy="118" r="20" fill="#E84060" fill-opacity="0.1"/>
+          <circle cx="57" cy="118" r="17" fill="#E84060"/>
+          <circle cx="57" cy="118" r="12" fill="#F06080"/>
+          <path d="M57 125 C57 125 48 120 48 114.5 C48 111 51 109 54 109 C56 109 57 110.5 57 110.5 C57 110.5 58 109 60 109 C63 109 66 111 66 114.5 C66 120 57 125 57 125Z" fill="white" fill-opacity="0.85"/>
+          <rect x="54" y="134" width="6" height="13" rx="3" fill="#B83050"/>
+          <circle cx="143" cy="118" r="20" fill="#1A9868" fill-opacity="0.1"/>
+          <circle cx="143" cy="118" r="17" fill="#1A9868"/>
+          <circle cx="143" cy="118" r="12" fill="#28B07C"/>
+          <circle cx="143" cy="112" r="4.5" fill="white" fill-opacity="0.28"/>
+          <circle cx="143" cy="124" r="4.5" fill="white" fill-opacity="0.28"/>
+          <circle cx="137" cy="118" r="4.5" fill="white" fill-opacity="0.28"/>
+          <circle cx="149" cy="118" r="4.5" fill="white" fill-opacity="0.28"/>
+          <circle cx="143" cy="118" r="4.5" fill="#FBBF24"/>
+          <rect x="140" y="134" width="6" height="13" rx="3" fill="#147850"/>
+        </svg>
+      </div>
+      <div class="pcard__info">
+        <p class="pcard__name">значки</p>
+        <span class="pcard__gallery-tag pcard__gallery-tag--soon">скоро</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -418,6 +497,46 @@
     <span class="footer__copy">© 2026 — Полиграфия & Дизайн</span>
   </div>
 </footer>
+
+<!-- GALLERY MODAL -->
+<div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Галерея работ">
+  <div class="gallery-modal__dialog" id="gallery-dialog">
+    <div class="gallery-modal__handle" id="gallery-handle"></div>
+    <div class="gallery-modal__header">
+      <div class="gallery-modal__header-left">
+        <span class="gallery-modal__title" id="gallery-title"></span>
+        <span class="gallery-modal__count" id="gallery-count"></span>
+      </div>
+      <button class="gallery-modal__close" id="gallery-close" aria-label="Закрыть">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+          <line x1="1" y1="1" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="1" x2="1" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="gallery-modal__body" id="gallery-body"></div>
+
+    <!-- Zoom overlay — appears over the grid when clicking a photo -->
+    <div class="gallery-zoom" id="gallery-zoom">
+      <div class="gallery-zoom__bar">
+        <button class="gallery-zoom__back" id="gallery-zoom-back">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          назад
+        </button>
+        <span class="gallery-zoom__counter" id="gallery-zoom-counter"></span>
+      </div>
+      <div class="gallery-zoom__stage">
+        <button class="gallery-zoom__nav gallery-zoom__prev" id="gallery-zoom-prev" aria-label="Предыдущее">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <img class="gallery-zoom__img" id="gallery-zoom-img" src="" alt="" decoding="async">
+        <button class="gallery-zoom__nav gallery-zoom__next" id="gallery-zoom-next" aria-label="Следующее">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
