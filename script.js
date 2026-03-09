@@ -356,6 +356,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         { src: 'my_works/шопперы/mili_shopper.png',    alt: 'Шоппер' },
         { src: 'my_works/шопперы/milli shopper_2.png', alt: 'Шоппер' },
       ]
+    },
+    notebooks: {
+      title: 'блокнот с принтом / тетради',
+      photos: [
+        { src: 'my_works/блокноты-тетради/photo_1.png', alt: 'Блокнот с принтом' },
+        { src: 'my_works/блокноты-тетради/photo_2.png', alt: 'Блокнот с принтом' },
+      ]
     }
   };
 
