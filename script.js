@@ -340,6 +340,22 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         { src: 'my_works/Значки/стандарт глянец.png',      alt: 'Значок — стандарт глянец' },
         { src: 'my_works/Значки/сахарная ламинация.png',  alt: 'Значок — сахарная ламинация' },
       ]
+    },
+    magnets: {
+      title: 'магнитики',
+      photos: [
+        { src: 'my_works/магнитики/photo_1.png',     alt: 'Магнитик' },
+        { src: 'my_works/магнитики/photo_2.png',     alt: 'Магнитик' },
+        { src: 'my_works/магнитики/with_bronze.png', alt: 'Магнитик с бронзой' },
+        { src: 'my_works/магнитики/with_bronze_2.png', alt: 'Магнитик с бронзой' },
+      ]
+    },
+    shoppers: {
+      title: 'шопперы',
+      photos: [
+        { src: 'my_works/шопперы/mili_shopper.png',    alt: 'Шоппер' },
+        { src: 'my_works/шопперы/milli shopper_2.png', alt: 'Шоппер' },
+      ]
     }
   };
 
