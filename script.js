@@ -351,7 +351,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       ]
     },
     shoppers: {
-      title: 'шопперы',
+      title: 'шопперы с принтом',
       photos: [
         { src: 'my_works/шопперы/mili_shopper.png',    alt: 'Шоппер' },
         { src: 'my_works/шопперы/milli shopper_2.png', alt: 'Шоппер' },
@@ -362,6 +362,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       photos: [
         { src: 'my_works/блокноты-тетради/photo_1.png', alt: 'Блокнот с принтом' },
         { src: 'my_works/блокноты-тетради/photo_2.png', alt: 'Блокнот с принтом' },
+      ]
+    },
+    stickers: {
+      title: 'наклейки / стикерпак',
+      photos: [
+        { src: 'my_works/наклеечки/photo_1.jpg', alt: 'Наклейки' },
+        { src: 'my_works/наклеечки/photo_2.jpg', alt: 'Наклейки' },
+        { src: 'my_works/наклеечки/photo_3.jpg', alt: 'Наклейки' },
+        { src: 'my_works/наклеечки/photo_4.jpg', alt: 'Наклейки' },
       ]
     }
   };
