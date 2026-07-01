@@ -372,6 +372,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         { src: 'my_works/наклеечки/photo_3.jpg', alt: 'Наклейки' },
         { src: 'my_works/наклеечки/photo_4.jpg', alt: 'Наклейки' },
       ]
+    },
+    cards: {
+      title: 'визитки',
+      photos: [
+        { src: 'my_works/визитки/photo_1.jpg', alt: 'Визитка' },
+        { src: 'my_works/визитки/photo_2.jpg', alt: 'Визитка' },
+      ]
     }
   };
 
